@@ -1,0 +1,9 @@
+﻿The model was generated with warnings or errors.Model1.edmxPlease see the Error List for more details. These issues must be fixed before running your application.
+Loading metadata from the database took 00:00:00.5770969.
+Generating the model took 00:00:00.6951058.
+Generated model file: Model1.edmx.
+Loading metadata from the database took 00:00:00.4644211.
+Generating the model took 00:00:00.3758632.
+Generated model file: Model1.edmx.
+Loading metadata from the database took 00:00:00.5709876.
+Generating the model took 00:00:00.4196187.

@@ -1,0 +1,92 @@
+﻿@model IEnumerable<MvcFirmaCagri.Models.Entity.TblFirmalar>
+
+@{
+    ViewBag.Title = "progiter";
+    Layout = "~/Views/Shared/FirmaLayout.cshtml";
+}
+
+<h2>profil Düzeltme</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yetkili)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sektor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.il)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ilce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Durum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gorsel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yetkili)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sektor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.il)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ilce)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Durum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sifre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gorsel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+
+        </td>
+    </tr>
+}
+
+</table>
